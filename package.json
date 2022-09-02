@@ -1,8 +1,8 @@
 {
-  "name": "moster-inc",
-  "version": "1.0.0",
+  "name": "mosterinc",
+  "version": "0.1.0",
   "private": true,
-  "description": "moster-inc",
+  "description": "Moster, Inc.",
   "author": "Jalo Moster",
   "keywords": [
     "gatsby"
