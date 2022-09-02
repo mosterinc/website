@@ -12,11 +12,32 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "prepare": "husky install"
   },
   "dependencies": {
     "gatsby": "^4.22.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^7.0.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "eslintConfig": {
+    "globals": {
+      "__PATH_PREFIX__": true
+    },
+    "extends": "react-app",
+    "rules": {
+      "react/jsx-pascal-case": "off"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css}": [
+      "prettier --write"
+    ]
   }
 }
