@@ -1,8 +1,8 @@
 {
-  "name": "moster-inc",
-  "version": "1.0.0",
+  "name": "mosterinc",
+  "version": "0.1.0",
   "private": true,
-  "description": "moster-inc",
+  "description": "Moster, Inc.",
   "author": "Jalo Moster",
   "keywords": [
     "gatsby"
@@ -12,11 +12,37 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "prepare": "husky install"
   },
   "dependencies": {
     "gatsby": "^4.22.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "cssnano": "^5.1.13",
+    "eslint-config-react-app": "^7.0.1",
+    "gatsby-plugin-postcss": "^5.22.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.8"
+  },
+  "eslintConfig": {
+    "globals": {
+      "__PATH_PREFIX__": true
+    },
+    "extends": "react-app",
+    "rules": {
+      "react/jsx-pascal-case": "off"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css}": [
+      "prettier --write"
+    ]
   }
 }

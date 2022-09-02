@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Moster, Inc.`,
+    description: `A corporation by Jalo Moster`,
+    image: `/icon.png`,
+    siteUrl: `https://mosterinc.com`,
+    twitterUsername: `@jlvmoster`,
   },
-  plugins: [],
-}
+  plugins: [`gatsby-plugin-postcss`],
+};
