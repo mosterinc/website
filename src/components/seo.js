@@ -20,7 +20,8 @@ const SEO = ({ title, description, pathname, children }) => {
       <meta name='twitter:description' content={seo.description} />
       <meta name='twitter:image' content={seo.image} />
       <meta name='twitter:creator' content={twitterUsername} />
-      <link rel='icon' href='/icon.png' />
+      <link id='icon' rel='icon' href='/icon.png' />
+      <link id='inter-font' rel='stylesheet' href='https://rsms.me/inter/inter.css' />
       {children}
     </React.Fragment>
   );
